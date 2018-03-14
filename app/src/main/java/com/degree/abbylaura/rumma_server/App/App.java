@@ -19,7 +19,7 @@ public class App extends Application {
     {
         super.onCreate();
         context = this.getApplicationContext();
-        dbHelper = new DatabaseHelper();
+        dbHelper = new DatabaseHelper(context);
         DatabaseManager.initializeInstance(dbHelper);
 
     }
